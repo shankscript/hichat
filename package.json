@@ -1,0 +1,10 @@
+{
+  "name": "HiChat",
+  "version": "0.0.1",
+  "description": "This app shows the power of MongoDb, WebSocket & nodejs",
+  "dependencies": {
+    "express": "~4.9.0",
+    "socket.io": "~1.1.0",
+    "mongodb": "~1.4.19"
+  }
+}
