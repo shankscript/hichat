@@ -13,9 +13,16 @@ Test Report
 ===========
 
 Tested on :-
-IE 9
-Chrome
-Mozilla
-Android 4.4
-Mac
-iOS
+- IE 9
+- Chrome
+- Mozilla
+- Android 4.4
+- Mac
+- iOS
+
+Setup
+=====
+
+Demo
+====
+http://shanksdemo.cloudapp.net
