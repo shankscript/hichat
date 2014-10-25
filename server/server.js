@@ -18,7 +18,7 @@ mongo.connect("mongodb://127.0.0.1/chat", function (err, db) {
 		};
 		/*
 		col.remove({}, function(e) {
-			console.log(e);
+		console.log(e);
 		});*/
 		col.find().limit(100).sort({
 			_id : 1
@@ -70,7 +70,8 @@ app.use('/img', express.static(__dirname + '/public/img'));
 app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));
 
-http.listen(80, function (e) {
-if(e) throw e;
-	console.log('listening on *:80');
+http.listen(process.env.port || 80, function (e) {
+	if (e)
+		throw e;
+	console.log('listening on *:' + (process.env.port || 80));
 });

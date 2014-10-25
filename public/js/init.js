@@ -19,27 +19,27 @@
 		}
 	};
 	if (!window.location.origin) {
-  		window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+		window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port : '80');
 	}
 	//setStatus('testing');
 	try {
-		var socket = io.connect(location.origin + ':80');
+		var socket = io.connect(location.origin);
 	} catch (e) {
-	//alert(e);
+		//alert(e);
 		//console.log(e);
 	}
 
 	if (socket !== undefined) {
 		//console.log("Allz well");
-		
-		socket.on('output', function(d) {
+
+		socket.on('output', function (d) {
 			//console.log(d);
 			var l = d.length;
-			
-			if(l) {
-				for(var i = 0; i < l; i++) {
+
+			if (l) {
+				for (var i = 0; i < l; i++) {
 					var m = document.createElement('div');
-					if(!m.classList) {
+					if (!m.classList) {
 						m.className = 'chat-message';
 					} else {
 						m.classList.add('chat-message');
@@ -49,15 +49,14 @@
 					//messages.appendChild(m);
 					messages.insertBefore(m, messages.firstChild || null);
 				}
-			
+
 			}
 		});
-		
-		
-		socket.on('status', function(d) {
+
+		socket.on('status', function (d) {
 			setStatus((typeof d === 'object') ? d.message : d);
-			
-			if(d.clear === true) {
+
+			if (d.clear === true) {
 				textArea.value = '';
 			}
 		});
