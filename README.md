@@ -21,8 +21,8 @@ Tested on :-
 - iOS
 
 Setup
-=====
+-----
 
 Demo
 ====
-http://shanksdemo.cloudapp.net
+http://demo.shashanksharma.me/
