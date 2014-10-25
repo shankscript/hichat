@@ -10,7 +10,7 @@ This is a simple chat application based on following technologies:-
 - Microsoft Azure Cloud
 
 Test Report
-===========
+-----------
 
 Tested on :-
 - IE 9
@@ -24,5 +24,5 @@ Setup
 -----
 
 Demo
-====
+----
 http://demo.shashanksharma.me/
