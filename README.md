@@ -22,6 +22,15 @@ Tested on :-
 
 Setup
 -----
+- Clone repository or downloan Zip
+- Install MongoDB http://docs.mongodb.org/manual/installation/
+- Install node.js http://nodejs.org/download/
+- Install Grunt-cli https://www.npmjs.com/package/grunt-cli
+- Open command prompt in the root directory (where package.json resides) and execute 'npm install'. If you get error try setting npm proxies.
+- Go to MongoDB installed directory and execute 'mongod.exe'
+- CD to dest directory and execute 'node server.js'
+- Go to Browser and type 'http://localhost'
+- Happy chatting. If you face installing issues email me with error - shanksmgr1@gmail.com
 
 Demo
 ----
