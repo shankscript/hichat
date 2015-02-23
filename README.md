@@ -22,7 +22,7 @@ Tested on :-
 
 Setup
 -----
-- Clone repository or downloan Zip
+- Clone repository or download Zip
 - Install MongoDB http://docs.mongodb.org/manual/installation/
 - Install node.js http://nodejs.org/download/
 - Install Grunt-cli https://www.npmjs.com/package/grunt-cli
