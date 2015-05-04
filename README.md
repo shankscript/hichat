@@ -1,6 +1,6 @@
 HiChat
 ======
-
+[![wercker status](https://app.wercker.com/status/51fcfc0beea921cf08355383cba6b73b/s "wercker status")](https://app.wercker.com/project/bykey/51fcfc0beea921cf08355383cba6b73b)
 This is a simple chat application based on following technologies:-
 - WebSocket
 - MongoDB
